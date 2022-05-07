@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="site.css">
+    <title>Iniciativa Saúde da Cidade</title>
+</head>
+<body>
+    <div class="row ml-5">
+        <div class="col-5 mt-5">
+          <h1>Iniciativa Saúde da Cidade</h1>
+          <p>
+            Texto sobre vida saudável: Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos
+            at
+            vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit.
+          </p>
+          <p>
+            Texto sobre vida iniciativa: Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos
+            at
+            vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit.
+          </p>
+        </div>
+      
+        <div class="col-7 mt-5 d-flex justify-content-center">
+          <img src="img/saude.jpg" style="height: 350px;">
+        </div>
+      </div>
+      
+      <div class="row ml-5">
+        <div class="col-5 border border-dark mt-3">
+          <form id="formCadastro" method="POST">
+            <h2>Entre em contato!</h2>
+            <p>Nos mande uma mensagem e fique por dentro de nossos eventos</p>
+            <div class="row">
+              <div class="col-2">
+                <label asp-for="Nome">Nome:</label>
+              </div>
+              <div class="col-10">
+                <input asp-for="Nome" id="nome" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-2">
+                <label asp-for="Email">Email:</label>
+              </div>
+              <div class="col-10">
+                <input asp-for="Email" id="email" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-2">
+                <label asp-for="Mensagem">Mensagem (opcional):</label>
+              </div>
+              <div class="col-10">
+                <textarea asp-for="Mensagem" id="mensagem"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-10">
+                <input type="submit" value="Enviar" id="enviar" />
+              </div>
+            </div>
+          </form>
+        </div>
+      
+        <div class="col-7 mt-3 d-flex justify-content-around">
+          <div class="row">
+            <div class="col-4 d-flex flex-column justify-content-center align-items-center">
+              <figure class="figure">
+                <img src="img/agenda.png" class="figure-img img-fluid rounded" style="height: 80px">
+                <figcaption class="figure-caption">
+                  <a href="#" data-toggle="modal" data-target="#Agenda">Agenda de Eventos</a>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="col-4 d-flex flex-column justify-content-center align-items-center">
+              <figure class="figure">
+                <img src="img/dicas.png" class="figure-img img-fluid rounded" style="height: 80px">
+                <figcaption class="figure-caption">
+                  <a href="#" data-toggle="modal" data-target="#Dicas">Dicas de Vida Saudável</a>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="col-4 d-flex flex-column justify-content-center align-items-center">
+              <figure class="figure">
+                <img src="img/apoiadores.png" class="figure-img img-fluid rounded" style="height: 80px">
+                <figcaption class="figure-caption">
+                  <a href="#" data-toggle="modal" data-target="#Apoio">Apoiadores</a>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="modal fade" id="Agenda">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Agenda de Eventos</h5>
+            </div>
+            <div class="modal-body">
+              <p>10/10/10 10:10 - Evento 1</p>
+              <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus
+                delicata usu.</p>
+      
+              <p>10/10/10 10:10 - Evento 1</p>
+              <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus
+                delicata usu.</p>
+      
+              <p>10/10/10 10:10 - Evento 1</p>
+              <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus
+                delicata usu.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="modal fade" id="Dicas">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Dicas de Vida Saudável</h5>
+            </div>
+            <div class="modal-body">
+              <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at
+                vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit.</p>
+              <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at
+                vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit.</p>
+              <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at
+                vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="modal fade" id="Apoio">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Apoiadores</h5>
+            </div>
+            <div class="modal-body">
+              <div class="row d-flex align-items-center">
+                <img src="img/apoiadores.png" class="col-3">
+                <div class="col-8 collumn">
+                  <h5>Empresa 1</h5>
+                  <p>Descrição</p>
+                </div>
+              </div>
+              <div class="row d-flex align-items-center">
+                <img src="img/apoiadores.png" class="col-3">
+                <div class="col-8 collumn">
+                  <h5>Empresa 1</h5>
+                  <p>Descrição</p>
+                </div>
+              </div>
+              <div class="row d-flex align-items-center">
+                <img src="img/apoiadores.png" class="col-3">
+                <div class="col-8 collumn">
+                  <h5>Empresa 1</h5>
+                  <p>Descrição</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer text-muted ml-5">
+            &copy; 2022 - João Paulo Simplicio
+    </footer>
+    <script src="jquery/dist/jquery.min.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="site.js" asp-append-version="true"></script>
+</body>
+</html>
